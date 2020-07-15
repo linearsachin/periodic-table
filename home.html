@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/vue@2.6.11/dist/vue.js"></script>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <title>Periodic Table</title>
+</head>
+<body>
+    <div id="app">
+        <div id="out-table">
+            <div id="table">
+                <div id="wa"></div>
+                <div id="wb"></div>
+                <div id="wc"></div>
+                <div id="wd"><br><br></div>
+                <div id="we"></div>
+                <div id="wf"></div>
+                <div id="wg"></div>
+                <div id="wz"></div>
+                <div id="ele" v-for="element,index in elements" v-bind:class="blocks[index]" v-bind:data-atomic-target="atomicNo[index]">
+                    <div class="atomic-number">{{ atomicNo[index]}}</div>
+                    <div id="symbol">{{ symbols[index] }}</div>
+                    <div id="name"><small> {{ element }} </small></div>
+                </div>
+            </div>
+        
+
+        </div>
+        <div id="popup-info" class="modal">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <h1 id="popup-name"></h1>
+              <br>
+              <table>
+                  <tr>
+                      <th>Atomic Number:</th>
+                      <td id="atomic-number"></td>
+                  </tr>
+                  <tr>
+                    <th>Atomic Mass:</th>
+                    <td id="atomic-mass"></td>
+                </tr>
+                <tr>
+                    <th>Atomic Radius:</th>
+                    <td id="atomic-radius"></td>
+                </tr>
+                <tr>
+                    <th>Boiling Point:</th>
+                    <td id="boiling-point"></td>
+                </tr>
+                <tr>
+                    <th>Bonding Type:</th>
+                    <td id="bonding-type"></td>
+                </tr>
+                <tr>
+                    <th>Electronic Configuration:</th>
+                    <td id="electronic-config"></td>
+                </tr>
+
+              </table>
+            </div>
+        </div>
+        
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>

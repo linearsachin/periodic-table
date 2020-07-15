@@ -1,0 +1,193 @@
+.s {
+    color: black;
+    margin: 0;
+    padding: 2em;
+    border:0.1px solid white;
+    text-align: center;
+}
+.d {
+    background-color: #ffaca6;
+    color: black;
+    margin: 0;
+    padding: 2em;
+    border:0.1px solid white;
+    text-align: center;
+}
+.p {
+    background-color: #f4b2f7;
+    color: black;
+    margin: 0;
+    padding: 2em;
+    border:0.1px solid white;
+    text-align: center;  
+}
+.f {
+    
+    color: black;
+    margin: 0;
+    padding: 2em;
+    border:0.1px solid white;
+    text-align: center;  
+}
+.polyatomic-nonmetal {
+    background-color: #0089df;
+}
+.alkali {
+    background-color: #36b2ff;
+}
+.alkali-earth {
+    background-color: #87cefa;
+}
+.lan {
+    background-color: #a3ffa8;
+}
+.act {
+    background-color: #4db853;
+}
+.metalloid {
+    background-color: #f765ff;
+}
+.halo {
+    background-color: #e236ee;
+    color: white;
+}
+.noble {
+    background-color: #b64fff;
+}
+
+
+    
+#table {
+    /* width: 100%;
+    overflow: auto; */
+    
+    display: inline-grid;
+    grid-template-columns:  repeat(18, 1fr);
+    grid-template-areas:
+        ".  wa wb wb wb wb wb wb wb wb wb wb wz wz wz wz wz ."
+        ".  .  wb wb wb wb wb wb wb wb wb wb .  .  .  .  .  ."
+        ".  .  wb wb wb wb wb wb wb wb wb wb .  .  .  .  .  ."
+        ".  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  ."
+        ".  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  ."
+        ".  .  wc .  .  .  .  .  .  .  .  .  .  .  .  .  .  ."
+        ".  .  wc .  .  .  .  .  .  .  .  .  .  .  .  .  .  ."
+        "wd wd wd wd wd wd wd wd wd wd wd wd wd wd wd wd wd wd"
+        "we we .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  wg"
+        "wf wf .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . ";
+    border-collapse: collapse;
+    
+}
+
+#wa {
+    box-sizing: border-box;
+    background-color: white;
+    grid-area: wa;
+}
+#wb {
+    box-sizing: border-box;
+    background-color: white;
+    grid-area: wb;
+}
+#wc {
+    box-sizing: border-box;
+    background-color: white;
+    grid-area: wc;
+}
+#wd {
+    box-sizing: border-box;
+    background-color: white;
+    grid-area: wd;
+}
+#we {
+    box-sizing: border-box;
+    background-color: white;
+    grid-area: we;
+}
+#wf {
+    box-sizing: border-box;
+    background-color: white;
+    grid-area: wf;
+}
+#wz {
+    box-sizing: border-box;
+    background-color: white;
+    grid-area: wz;
+}
+#wg {
+    box-sizing: border-box;
+    background-color: white;
+    grid-area: wg;
+}
+#ele {
+    text-align: center;
+    font-family: system-ui;
+    padding: 0em;
+    border: 0.1px solid white;
+    color: #3a373b;
+    margin: 0;
+}
+.atomic-number{
+    padding-left: 8px;
+    padding-top:  8px;
+    text-align: left;
+
+}
+#name, #symbol{
+    margin: 0.5em;
+}
+
+
+
+
+
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  table {
+      border: #0089df;
+      
+  }
+
+  td {
+    text-transform: capitalize;
+    text-align: center;
+  }
+  th {
+      text-align: left;
+  }
