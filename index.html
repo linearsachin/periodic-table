@@ -25,44 +25,21 @@
                     <div id="name"><small> {{ element }} </small></div>
                 </div>
             </div>
-        
-
         </div>
+
         <div id="popup-info" class="modal">
             <div class="modal-content">
               <span class="close">&times;</span>
               <h1 id="popup-name"></h1>
               <br>
               <table>
-                  <tr>
-                      <th>Atomic Number:</th>
-                      <td id="atomic-number"></td>
-                  </tr>
-                  <tr>
-                    <th>Atomic Mass:</th>
-                    <td id="atomic-mass"></td>
-                </tr>
-                <tr>
-                    <th>Atomic Radius:</th>
-                    <td id="atomic-radius"></td>
-                </tr>
-                <tr>
-                    <th>Boiling Point:</th>
-                    <td id="boiling-point"></td>
-                </tr>
-                <tr>
-                    <th>Bonding Type:</th>
-                    <td id="bonding-type"></td>
-                </tr>
-                <tr>
-                    <th>Electronic Configuration:</th>
-                    <td id="electronic-config"></td>
-                </tr>
-
+                    <tr v-for="info in infoTags">
+                        <th>{{ info[0] }}</th>
+                        <td v-bind:id="info[1]"></td>
+                    </tr>
               </table>
             </div>
         </div>
-        
     </div>
 </body>
 <script src="script.js"></script>
