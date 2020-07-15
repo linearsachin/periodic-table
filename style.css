@@ -9,6 +9,11 @@
 html {
     font-size: 16px;
 }
+@media screen and (max-width: 480px) {
+    html {
+      font-size: 5px;
+    }
+  }
 
 
 #ele {
@@ -79,7 +84,7 @@ html {
 
     
 #table {
-    transform: rotate(0deg) skew(0deg); 
+    overflow: scroll;
     display: grid;
     grid-template-columns:  repeat(18, minmax(2.5em, 1fr));
     align-items: center;
@@ -171,6 +176,7 @@ html {
     font-size: 0.75rem;  
     margin: 0.5em;
     margin-top: 0em;
+
 }
 #symbol {
     font-family: 'Karla', sans-serif;
@@ -199,7 +205,7 @@ html {
     margin: auto;
     padding: 20px;
     border: 1px solid #888;
-    width: 50%;
+    width: 70%;
   }
   .close {
     color: #aaaaaa;
