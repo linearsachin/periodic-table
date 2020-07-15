@@ -84,7 +84,6 @@ Array.from(showInfo).forEach(element => {
         xmlhttp.onreadystatechange = function() {
             if (this.readyState == 4 && this.status == 200) {
                 var myArr = JSON.parse(this.responseText);
-                console.log(element)
                 document.getElementById("popup-name").innerHTML=check(myArr['name'])
                 document.getElementById("atomic-number").innerHTML=check(myArr['atomicNumber'])
                 document.getElementById("atomic-mass").innerHTML=check(myArr['atomicMass'])
