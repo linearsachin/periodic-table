@@ -75,14 +75,10 @@
     background-color: #2bbce4;
 }
 
-#out-table {
-    padding-top: 1em;
-    padding-left: 1em;
-}
     
 #table {
 
-    overflow: scroll; 
+
     transform: rotate(0deg) skew(0deg); 
     display: grid;
     grid-template-columns:  repeat(18, minmax(2.5em, 1fr));
