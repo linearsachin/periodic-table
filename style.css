@@ -4,9 +4,22 @@
   }
   body{
     background-color: black;
+  }
+
+
+@media screen and (max-width: 480px) {
+    #out-table {
+        padding: 1em;
+        transform: rotate(-90deg) skew(0deg);
+    }
+}
+@media screen and (min-width: 480px) {
+    #out-table {
+        transform: rotate(0deg) skew(0deg);
+    }
 }
 
-  #ele {
+#ele {
     text-align: center;
     font-family: system-ui;
     padding: 0;
