@@ -1,20 +1,30 @@
 * {
     box-sizing: border-box;
+    
   }
+  body{
+    background-color: black;
+}
 
-
+  #ele {
+    text-align: center;
+    font-family: system-ui;
+    padding: 0;
+    border: 0.1px solid white;
+    margin: 0;
+}
 .s {
     color: black;
     margin: 0;
-    padding: 2em;
+    padding: 1em;
     border:0.1px solid white;
     text-align: center;
 }
 .d {
-    background-color: #ffaca6;
-    color: black;
+    background-color: #5d5d5d;
+    color: white;
     margin: 0;
-    padding: 2em;
+    padding: 1em;
     border:0.1px solid white;
     text-align: center;
 }
@@ -22,26 +32,28 @@
     background-color: #f4b2f7;
     color: black;
     margin: 0;
-    padding: 2em;
+    padding: 1em;
     border:0.1px solid white;
     text-align: center;  
 }
 .f {
-    
     color: black;
     margin: 0;
-    padding: 2em;
+    padding: 1em;
     border:0.1px solid white;
     text-align: center;  
 }
 .polyatomic-nonmetal {
-    background-color: #0089df;
+    background-color: #02d4df;
 }
 .alkali {
-    background-color: #36b2ff;
+    background-color: #00adb5;
+}
+.transition{
+    color:white;
 }
 .alkali-earth {
-    background-color: #87cefa;
+    background-color: #a3f7bf;
 }
 .lan {
     background-color: #a3ffa8;
@@ -50,14 +62,14 @@
     background-color: #4db853;
 }
 .metalloid {
-    background-color: #f765ff;
+    background-color: #d876ff;
 }
 .halo {
-    background-color: #e236ee;
-    color: white;
+    background-color: #2bbce4;;
+    color: black;
 }
 .noble {
-    background-color: #b64fff;
+    background-color: #2bbce4;
 }
 
 
@@ -65,9 +77,12 @@
 #table {
     /* width: 100%;
     overflow: auto; */
-    
+
+    padding: 1em 1em;
+    transform: rotate(0deg) skew(0deg); 
     display: grid;
-    grid-template-columns:  repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-columns:  repeat(18, minmax(2.5em, 1fr));
+    grid-template-rows:  repeat(auto-fill, minmax(0.5em, 1fr));
     align-items: center;
     grid-template-areas:
         ".  wa wb wb wb wb wb wb wb wb wb wb wz wz wz wz wz ."
@@ -124,14 +139,7 @@
     background-color: white;
     grid-area: wg;
 }
-#ele {
-    text-align: center;
-    font-family: system-ui;
-    padding: 0em;
-    border: 0.1px solid white;
-    color: #3a373b;
-    margin: 0;
-}
+
 .atomic-number{
     padding-left: 8px;
     padding-top:  8px;
@@ -140,6 +148,9 @@
 }
 #name, #symbol{
     margin: 0.5em;
+}
+#name {
+    font-size: 13px;
 }
 
 
