@@ -7,17 +7,7 @@
   }
 
 
-@media screen and (max-width: 480px) {
-    #out-table {
-        padding: 1em;
-        transform: rotate(-90deg) skew(0deg);
-    }
-}
-@media screen and (min-width: 480px) {
-    #out-table {
-        transform: rotate(0deg) skew(0deg);
-    }
-}
+
 
 #ele {
     text-align: center;
@@ -85,13 +75,14 @@
     background-color: #2bbce4;
 }
 
-
+#out-table {
+    padding-top: 1em;
+    padding-left: 1em;
+}
     
 #table {
-    /* width: 100%;
-    overflow: auto; */
 
-    padding: 1em 1em;
+    overflow: scroll; 
     transform: rotate(0deg) skew(0deg); 
     display: grid;
     grid-template-columns:  repeat(18, minmax(2.5em, 1fr));
