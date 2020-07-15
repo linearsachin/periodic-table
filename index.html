@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://unpkg.com/vue@2.6.11/dist/vue.js"></script>
     <link rel="stylesheet" type="text/css" href="./style.css">
-    <title>Periodic Table</title>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;1,700&family=Sora:wght@800&display=swap" rel="stylesheet">    <title>Periodic Table</title>
 </head>
 <body>
     <div id="app">
@@ -32,12 +32,21 @@
               <span class="close">&times;</span>
               <h1 id="popup-name"></h1>
               <br>
-              <table>
-                    <tr v-for="info in infoTags">
+              <div id="table-2">
+                <table id="tab1">
+                        <tr v-for="info in infoTags1">
+                            <th>{{ info[0] }}</th>
+                            <td v-bind:id="info[1]"></td>
+                        </tr>
+                </table>
+                <div id="vl"></div>
+                <table id="tab2">
+                    <tr v-for="info in infoTags2">
                         <th>{{ info[0] }}</th>
                         <td v-bind:id="info[1]"></td>
                     </tr>
-              </table>
+            </table>
+            </div>
             </div>
         </div>
     </div>

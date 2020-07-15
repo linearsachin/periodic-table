@@ -50,7 +50,7 @@ new Vue ({
         symbols: elementsSymbol,
         blocks: elementBlock,
         atomicNo: atomicNumber,
-        infoTags:[
+        infoTags1:[
             [ "Atomic Number:", "atomic-number" ],
             [ "Atomic Mass:", "atomic-mass" ],
             [ "Atomic Radius:", "atomic-radius" ],
@@ -59,6 +59,15 @@ new Vue ({
             [ "Electronic Configuration:", "electronic-config" ],
             [ "CPK coloring:","cpkHexColor"],
         ],
+        infoTags2 : [
+            ["Density:","density"],
+            ["Electron Affinity:","electronAffinity"],
+            ["Electro Negativity:","electronegativity"],
+            ["Melting Point:","meltingPoint"],
+            ["Group Block:","groupBlock"],
+            ["Ionization Energy:","ionizationEnergy"],
+            ["Oxidation States:","oxidationStates"],
+        ]
     }
     
 })
@@ -84,6 +93,8 @@ Array.from(showInfo).forEach(element => {
         xmlhttp.onreadystatechange = function() {
             if (this.readyState == 4 && this.status == 200) {
                 var myArr = JSON.parse(this.responseText);
+                console.log(myArr)
+                
                 document.getElementById("popup-name").innerHTML=check(myArr['name']); 
                 document.getElementById("atomic-number").innerHTML=check(myArr['atomicNumber']); 
                 document.getElementById("atomic-mass").innerHTML=check(myArr['atomicMass']); 
@@ -92,6 +103,15 @@ Array.from(showInfo).forEach(element => {
                 document.getElementById("bonding-type").innerHTML=check(myArr['bondingType']); 
                 document.getElementById("electronic-config").innerHTML=check(myArr['electronicConfiguration']); 
                 document.getElementById("cpkHexColor").style.backgroundColor="#"+check(myArr['cpkHexColor']); 
+                
+                document.getElementById("density").innerHTML=check(myArr['density']); 
+                document.getElementById("electronAffinity").innerHTML=check(myArr['electronAffinity']); 
+                document.getElementById("electronegativity").innerHTML=check(myArr['electronegativity']); 
+                document.getElementById("meltingPoint").innerHTML=check(myArr['meltingPoint']); 
+                document.getElementById("groupBlock").innerHTML=check(myArr['groupBlock']); 
+                document.getElementById("ionizationEnergy").innerHTML=check(myArr['ionizationEnergy']); 
+                document.getElementById("oxidationStates").innerHTML=check(myArr['oxidationStates']); 
+
                 element.style.backgroundColor="#"+check(myArr['cpkHexColor']);
                 
             }
