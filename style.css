@@ -1,7 +1,11 @@
 * {
     box-sizing: border-box;
     
-  }
+}
+::selection {
+    color: black;
+    background: white;
+}
   body{
     background-color: black;
   }
