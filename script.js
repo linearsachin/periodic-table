@@ -100,6 +100,8 @@ Array.from(showInfo).forEach(element => {
                 
                 document.getElementById("popup-name").innerHTML=check(myArr['name']); 
                 document.getElementById("read-more").href="https://en.wikipedia.org/wiki/"+check(myArr['name'])
+                document.getElementById("popup-symbol").innerHTML=check(myArr['symbol']); 
+
 
                 document.getElementById("atomic-number").innerHTML=check(myArr['atomicNumber']); 
                 document.getElementById("atomic-mass").innerHTML=check(myArr['atomicMass']) +" u"; 

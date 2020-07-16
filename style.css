@@ -79,6 +79,8 @@ html {
 
     
 #table {
+    min-width: 75em;
+    max-width: 90em;
     overflow: scroll;
     display: grid;
     grid-template-columns:  repeat(18, minmax(2.5em, 1fr));
@@ -224,6 +226,11 @@ html {
     text-decoration: none;
     cursor: pointer;
   }
+#popup-name,#popup-symbol {
+    font-family: monospace;
+    padding: 0;
+    margin: 0;
+}
 #read-more {
     position: relative;
     background-color: #2786444d;
