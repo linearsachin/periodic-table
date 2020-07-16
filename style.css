@@ -9,11 +9,11 @@
 html {
     font-size: 16px;
 }
-@media screen and (max-width: 700px) {
+/* @media screen and (max-width: 700px) {
     html {
       font-size: 5px;
     }
-  }
+  } */
 
 
 #ele {
@@ -84,7 +84,7 @@ html {
 
     
 #table {
-    /* overflow: scroll; */
+    overflow: scroll;
     display: grid;
     grid-template-columns:  repeat(18, minmax(2.5em, 1fr));
     align-items: center;
@@ -103,6 +103,7 @@ html {
     
 }
 #table-2 {
+    overflow: scroll;
     display: grid;
     grid-template-columns:  repeat(3, minmax(1fr));
     align-items: center;
