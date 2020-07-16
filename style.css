@@ -224,6 +224,21 @@ html {
     text-decoration: none;
     cursor: pointer;
   }
+#read-more {
+    position: relative;
+    background-color: #2786444d;
+    border: none;
+    color: black;
+    font-family: 'Karla', sans-serif;;
+    padding: 0.5em;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin-top: 1em;
+    cursor: pointer;
+}
+
 
 
   table {
