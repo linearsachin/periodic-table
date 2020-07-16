@@ -97,6 +97,9 @@ html {
     border-collapse: collapse;
     
 }
+#table::-webkit-scrollbar {
+    display: none;
+}
 #table-2 {
     font-family: 'Karla', sans-serif;
     overflow: scroll;
