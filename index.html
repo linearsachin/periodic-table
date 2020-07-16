@@ -40,6 +40,7 @@
                 <table id="tab1">
                         <tr v-for="info in infoTags1">
                             <th>{{ info[0] }}</th>
+                            <th>: </th>
                             <td v-bind:id="info[1]"></td>
                         </tr>
                 </table>
@@ -47,6 +48,7 @@
                 <table id="tab2">
                     <tr v-for="info in infoTags2">
                         <th>{{ info[0] }}</th>
+                        <th>: </th>
                         <td v-bind:id="info[1]"></td>
                     </tr>
                 </table>

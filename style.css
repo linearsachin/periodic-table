@@ -112,9 +112,9 @@ html {
         "tab1 tab2";
     border-collapse: collapse;
 }
-#table-2::-webkit-scrollbar {
+/* #table-2::-webkit-scrollbar {
     display: none;
-}
+} */
 
 #tab1 {
     grid-area: tab1;
@@ -252,8 +252,10 @@ html {
       border: #0089df;
   }
   td {
+    white-space: nowrap;
     text-align: center;
   }
   th {
+    white-space: nowrap;
       text-align: left;
   }
