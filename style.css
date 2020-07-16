@@ -10,7 +10,11 @@ html {
     font-size: 16px;
 }
 
-
+#footer {
+    text-align: center;
+    background-color: #02d4df;
+    padding: 1rem;
+}
 #ele {
     text-align: center;
     font-family: system-ui;

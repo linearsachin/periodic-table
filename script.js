@@ -42,8 +42,9 @@ const atomicNumber = [  1, 2,
 new Vue ({
     el:"#app",
     data:{
-        name:"sachin",
-        last_name:"yadav",
+        authorName:"Sachin Yadav",
+        github:"https://github.com/linearsachin",
+        linkedin:"https://www.linkedin.com/in/linearsachin/",
         columns: [1,2,-1,3,4,5,6,7,8,9,10,11,12,-1,13,14,15,16,17,18],
         rows: [4,5,6,7],
         elements: elementsName,
