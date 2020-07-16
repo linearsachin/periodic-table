@@ -11,10 +11,13 @@ html {
 }
 
 #footer {
+    font-family: monospace;
     text-align: center;
-    background-color: #02d4df;
-    padding: 1rem;
+    background-color: transparent;
+    padding: 1rem; 
+    color: white;
 }
+
 #ele {
     text-align: center;
     font-family: system-ui;
@@ -81,11 +84,16 @@ html {
     background-color: #2bbce4;
 }
 
-    
+
+
+#out-table {
+    overflow: scroll;
+    padding: 1em;
+}    
 #table {
     min-width: 75em;
     max-width: 90em;
-    overflow: scroll;
+    
     display: grid;
     grid-template-columns:  repeat(18, minmax(2.5em, 1fr));
     align-items: center;
@@ -103,7 +111,7 @@ html {
     border-collapse: collapse;
     
 }
-#table::-webkit-scrollbar {
+#out-table::-webkit-scrollbar {
     display: none;
 }
 #table-2 {
