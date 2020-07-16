@@ -9,11 +9,6 @@
 html {
     font-size: 16px;
 }
-/* @media screen and (max-width: 700px) {
-    html {
-      font-size: 5px;
-    }
-  } */
 
 
 #ele {
@@ -31,7 +26,7 @@ html {
     text-align: center;
 }
 .d {
-    background-color: #5d5d5d;
+    background-color: transparent;
     color: white;
     margin: 0;
     padding: 1em;
@@ -103,6 +98,7 @@ html {
     
 }
 #table-2 {
+    font-family: 'Karla', sans-serif;
     overflow: scroll;
     display: grid;
     grid-template-columns:  repeat(3, minmax(1fr));
@@ -111,6 +107,10 @@ html {
         "tab1 tab2";
     border-collapse: collapse;
 }
+#table-2::-webkit-scrollbar {
+    display: none;
+}
+
 #tab1 {
     grid-area: tab1;
 }
@@ -198,17 +198,21 @@ html {
     background-color: rgba(0,0,0,0.4);
   }
   
+#tab2 table tr {
+    font-size: 0.75rem;
+}
   .modal-content {
     background-color: #f9f9f9;
     margin: auto;
     padding: 20px;
+    font-size: 1rem;
     border: 1px solid #888;
-    width: 70%;
+    width: 98%;
   }
   .close {
     color: #aaaaaa;
     float: right;
-    font-size: 2rem;
+
     font-weight: bold;
   }
   .close:hover,
