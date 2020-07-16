@@ -84,6 +84,9 @@ function check(params) {
     }
     
 }
+function capitalize(string) {
+    return string.charAt(0).toUpperCase() + string.slice(1);
+  }
 
 Array.from(showInfo).forEach(element => {
     element.addEventListener("click", () => {
@@ -96,20 +99,21 @@ Array.from(showInfo).forEach(element => {
                 console.log(myArr)
                 
                 document.getElementById("popup-name").innerHTML=check(myArr['name']); 
+
                 document.getElementById("atomic-number").innerHTML=check(myArr['atomicNumber']); 
-                document.getElementById("atomic-mass").innerHTML=check(myArr['atomicMass']); 
-                document.getElementById("atomic-radius").innerHTML=check(myArr['atomicRadius']); 
-                document.getElementById("boiling-point").innerHTML=check(myArr['boilingPoint']); 
-                document.getElementById("bonding-type").innerHTML=check(myArr['bondingType']); 
+                document.getElementById("atomic-mass").innerHTML=check(myArr['atomicMass']) +" u"; 
+                document.getElementById("atomic-radius").innerHTML=check(myArr['atomicRadius'])+" pm"; 
+                document.getElementById("boiling-point").innerHTML=check(myArr['boilingPoint'])+ " °C"; 
+                document.getElementById("bonding-type").innerHTML=capitalize(check(myArr['bondingType']));
                 document.getElementById("electronic-config").innerHTML=check(myArr['electronicConfiguration']); 
                 document.getElementById("cpkHexColor").style.backgroundColor="#"+check(myArr['cpkHexColor']); 
                 
-                document.getElementById("density").innerHTML=check(myArr['density']); 
-                document.getElementById("electronAffinity").innerHTML=check(myArr['electronAffinity']); 
+                document.getElementById("density").innerHTML=check(myArr['density'])+" g/cm³"; 
+                document.getElementById("electronAffinity").innerHTML=check(myArr['electronAffinity'])+" kJ/mol"; 
                 document.getElementById("electronegativity").innerHTML=check(myArr['electronegativity']); 
-                document.getElementById("meltingPoint").innerHTML=check(myArr['meltingPoint']); 
-                document.getElementById("groupBlock").innerHTML=check(myArr['groupBlock']); 
-                document.getElementById("ionizationEnergy").innerHTML=check(myArr['ionizationEnergy']); 
+                document.getElementById("meltingPoint").innerHTML=check(myArr['meltingPoint']) +" °C"; 
+                document.getElementById("groupBlock").innerHTML=capitalize(check(myArr['groupBlock']));
+                document.getElementById("ionizationEnergy").innerHTML=check(myArr['ionizationEnergy'])+" kJ/mol "; 
                 document.getElementById("oxidationStates").innerHTML=check(myArr['oxidationStates']); 
 
                 element.style.backgroundColor="#"+check(myArr['cpkHexColor']);

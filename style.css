@@ -230,7 +230,6 @@ html {
       border: #0089df;
   }
   td {
-    text-transform: capitalize;
     text-align: center;
   }
   th {
