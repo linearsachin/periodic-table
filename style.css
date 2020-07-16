@@ -84,7 +84,7 @@ html {
 
     
 #table {
-    overflow: scroll;
+    /* overflow: scroll; */
     display: grid;
     grid-template-columns:  repeat(18, minmax(2.5em, 1fr));
     align-items: center;
@@ -107,21 +107,18 @@ html {
     grid-template-columns:  repeat(3, minmax(1fr));
     align-items: center;
     grid-template-areas:
-        "tab1 vl tab2";
+        "tab1 tab2";
     border-collapse: collapse;
 }
 #tab1 {
     grid-area: tab1;
 }
 #tab2 {
+    border-left: 0.25em solid green;
+    padding-left: 1em;
+    margin-left: 1em;
     grid-area: tab2;
 }
-#vl {
-    margin: 1em;
-    width: 0em;
-    border-left: 0.25em solid green;
-    height: 12em;
-  }
 
 #wa {
     box-sizing: border-box;
